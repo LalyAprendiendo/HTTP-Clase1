@@ -19,19 +19,19 @@ const server = http.createServer((request, response) => {
     switch (url) {
       case "/api":
         response.statusCode = 200;
-        response.setHeader("Content-Type", "aplication/json");
+        response.setHeader("Content-Type", "application/json");
         response.end(JSON.stringify(db.description));
         break;
 
       case "/api/students":
         response.statusCode = 200;
-        response.setHeader("Content-Type", "aplication/json");
+        response.setHeader("Content-Type", "application/json");
         response.end(JSON.stringify(db.students));
         break;
 
       case "/api/teachers":
         response.statusCode = 200;
-        response.setHeader("Content-Type", "aplication/json");
+        response.setHeader("Content-Type", "application/json");
         response.end(JSON.stringify(db.teachers));
         break;
 
